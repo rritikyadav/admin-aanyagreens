@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.logInCard {
+  width: 30%;
+  height: fit-content;
+  background-color: rgb(3, 45, 39);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.cardHeading {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: #b08d57;
+}
+.userName,
+.password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8vh;
+}
+.userName label,
+.password label {
+  align-self: flex-start;
+  color: #b08d57;
+}
+.userName input,
+.password input {
+  width: 80%;
+  background-color: transparent;
+  color: #b08d57;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b08d57;
+}
+.userName input:focus,
+.password input:focus {
+  outline: none;
+  box-shadow: none;
+}
+#btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 3rem;
+  background-color: #b08d57;
+  color: rgb(3, 45, 39);
+  border-radius: 3rem 0rem 3rem 0rem;
+  cursor: pointer;
+  margin-top: 3vh;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .logInCard {
+    width: 98%;
+    gap: 7svh;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .cardHeading {
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+  .userName,
+  .password {
+    gap: 2svh;
+  }
+  .userName input,
+  .password input {
+    width: 90%;
+    font-size: 1rem;
+  }
+  #btn {
+    padding: 0.5rem 4rem;
+    margin-top: 1svh;
+  }
+}
