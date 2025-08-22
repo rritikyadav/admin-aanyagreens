@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 .logInCard {
-  width: 30%;
+  width: 40%;
   height: fit-content;
   background-color: rgb(3, 45, 39);
   display: flex;
@@ -66,8 +66,7 @@ body {
   border: none;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 500px) {
   .logInCard {
     width: 98%;
     gap: 7svh;
@@ -90,4 +89,16 @@ body {
     padding: 0.5rem 4rem;
     margin-top: 1svh;
   }
+}
+
+@media screen and (min-width:501px) and (max-width:768px){
+.logInCard {
+    width: 80%;
+  }  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .logInCard {
+    width: 60%;
+  }  
 }

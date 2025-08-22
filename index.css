@@ -3,8 +3,14 @@
   src: url("/fonts/PlayfairDisplay-Italic.ttf");
 }
 
+@font-face {
+  font-family: gloock;
+  src: url('/fonts/Gloock-Regular.ttf');
+}
+
 body {
-  font-family: "playfair" !important;
+  font-family: "gloock" !important;
+  margin: 0;padding: 0;
 }
 .Nav {
   position: sticky;
@@ -25,9 +31,15 @@ body {
   aspect-ratio: 2/1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .Nav img {
     width: 28%;
-    aspect-ratio: 2/1;
   }
 }
+
+@media screen and (max-width: 500px) and (max-width:800px){
+  .Nav img{
+    width:35%;
+  }
+}
+
